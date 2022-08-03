@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap');
+*{
+    z-index: 4;
+}
+.p1{
+  width: 50%;
+  height: auto;
+  text-align: left;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+
+}
+
+.banner {
+  background-image: url("../../images1/hero\ image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  padding-left: 10%;
+
+
+}
+.ha{
+  position: absolute;
+  top: 40%;
+
+}
+.banner1{
+  width: 100vh;
+  height: 50vw;
+  position: absolute;
+  flex: content;
+  justify-content: space-between;
+  
+  
+}
+.blackrec{
+  z-index: 0;
+  width:32%;
+  height: 60%;
+  background-color: #333;
+  position: relative;
+  top: 20%;
+  left: -22%;
+
+}
+
+.banner > .ha1{
+  position: relative;
+  top:3%;
+  margin: 0.1vmax;
+  padding-left: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 6vmax;
+
+
+
+}
+.banner > .ha2 {
+  margin: 0.1vmax;
+  position: relative;
+  top:1.8%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 6vmax;
+
+}
+.banner > .ha3 {
+  margin: 0.1vmax;
+  position: relative;
+  top:0%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  padding-left: 5%;
+  font-size: 6vmax;
+ 
+}
+
+.banner > p {
+  z-index: 2;
+  font: 300 1.4vmax ;
+  text-align: left;
+  font-size: medium;
+}
+
+.banner > a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Roboto";
+  z-index: 2;
+  position: relative;
+  top: 15%;
+}
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 100%, 0 100%, 100% 100%);
+  max-width: 100%;
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+  .banner1{
+    width: 100vh;
+    height: 50vw;
+    position: absolute;
+    flex: content;
+    justify-content: space-between;
+    
+    
+  }
+
+}
